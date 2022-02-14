@@ -1,0 +1,10 @@
+@media only screen and (min-width:0px) and (max-width:767px){
+    body{
+        background-color:rgba(82, 123, 236, 0.253);
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0.363), whitesmoke, rgba(0, 0, 255, 0.425));
+    }
+}
+/*Recomendación de los profesores de CoderHouse:
+0px a 767px - mobile phone
+768px a 1024px - tables (in general)
+1025px - desktop*/

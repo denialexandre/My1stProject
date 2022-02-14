@@ -1,0 +1,105 @@
+$Color_1: linear-gradient(to right, rgba(255, 0, 0, 0.226), rgba(255, 166, 0, 0.226), rgba(255, 255, 0, 0.226), rgba(0, 128, 0, 0.226), rgba(0, 0, 255, 0.226), rgba(128, 0, 128, 0.226));
+$Textito: rgba(0, 0, 255, 0.836);
+/*Estas son variables globales*/
+
+body{
+    background-image: $Color_1;
+}
+h1{
+    color: $Textito;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+    text-align: center;
+}
+h2{
+    color:rgb(94, 34, 150);
+    $Shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+    /*Estas son variables internas*/
+    text-shadow: $Shadow;
+    text-align:center;
+    
+    span{
+        color:rgba(255, 0, 0, 0.486);
+    }
+}
+p{
+    text-align: center;
+}
+.box2{
+    background-color: rgb(224, 238, 238);
+    height: 750px;
+    width: 580px;
+    padding:15px;
+    border-width: 1px;
+    border-color:cadetblue;
+    border-style: outset;
+    float:left;
+    text-transform: capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:orchid;
+}
+h5{
+    text-align: center;
+    color:rgb(107, 32, 177);
+    $Shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+    /*Estas son variables internas*/
+    text-shadow: $Shadow;
+}
+dt{
+    margin-left: 15px;
+    color:rgb(109, 41, 41);
+    $Shadow: 3px 3px 3px rgba(0, 0, 0, 0.267);
+    /*Estas son variables internas*/
+    text-shadow: $Shadow;
+}
+dd{
+    margin-left: 25px;
+}
+li{
+    margin-left: 35px;
+}
+footer{
+    text-align: center;
+    margin-bottom: 15px; 
+    $Shadow: 5px 5px 5px rgba(0, 0, 0, 0.267); 
+    text-shadow: $Shadow;
+}
+.list{
+    /*list-style-type: lower-greek;*/
+    list-style-position: inside;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+ul{
+    li{
+        margin-left: 50px;
+        list-style-type: lower-greek;
+        /*list-style-position: inside;
+        list-style: none;
+        text-decoration: none;
+        display: inline-block;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.box2{
+    background-color: rgb(224, 238, 238);
+    height: 690px;
+    width: 450px;
+    padding:15px;
+    border-width: 10px;
+    border-color:cadetblue;
+    border-style: outset;
+    float:left;
+    text-transform: capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:orchid;
+    margin-left: 10px;
+}
+
+@import "_others"

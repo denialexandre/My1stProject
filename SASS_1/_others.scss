@@ -1,0 +1,12 @@
+$Color_2:  rgb(30, 20, 117);
+
+*{
+    margin:0;
+    padding:0;
+}
+p{
+    text-justify:inherit;
+    color: $Color_2;
+    font-style: italic;
+    font-size: 20px;
+}
