@@ -7,6 +7,7 @@ h1 {
   color: rgba(0, 0, 255, 0.836);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
   text-align: center;
+  font-style: cursive;
 }
 
 h2 {
@@ -14,6 +15,7 @@ h2 {
   /*Estas son variables internas*/
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
   text-align: center;
+  /*sass --watch SASS_1/AStyles_1.scss SASS_1/AStyles_1.css*/
 }
 h2 span {
   color: rgba(255, 0, 0, 0.486);
