@@ -9,10 +9,10 @@
     background-color: azure;
 }
 .container{
-    font-size:15px;
+    font-size:12px;
     font-weight: normal;
     text-align: center;
-    color:rgb(15, 82, 112);
+    color:rgb(255, 255, 255);
 }
 .gallery .container{
     width: 100%;
