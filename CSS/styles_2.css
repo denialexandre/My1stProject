@@ -8,8 +8,8 @@ dt{
     flex-direction: row;
     flex-flow: wrap;
 }
-.list{
-    /*list-style-type: lower-greek;
+/*.list{
+    list-style-type: lower-greek;
     list-style-position: inside;
     list-style: none;
     text-decoration: none;
@@ -17,8 +17,8 @@ dt{
     margin-left:0%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;*/
-}
+    flex-wrap: wrap;
+}*/
 .section_1{
     display: flex;
     flex-direction: row;
