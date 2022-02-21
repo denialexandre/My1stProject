@@ -1,30 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Montserrat:wght@300&display=swap');
-
-dt{
-    color:rgb(9, 139, 20);
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    flex-flow: wrap;
-}
-/*.list{
-    list-style-type: lower-greek;
-    list-style-position: inside;
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
-    margin-left:0%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}*/
-.section_1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /*flex-flow: row;*/
-}
 /*{
     margin: 2px;
     padding:2px;
@@ -40,7 +13,6 @@ dt{
     font-weight: normal;
     text-align: center;
     color:rgb(15, 82, 112);
-    border: 1px solid #fff;
 }
 .gallery .container{
     width: 100%;
