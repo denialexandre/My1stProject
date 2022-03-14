@@ -90,4 +90,36 @@ ul{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:orchid;
 }*/
+@media only screen and (min-width:1025px){
+    body{
+        /*background-color:rgb(255, 240, 223);*/
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0.226), rgba(255, 166, 0, 0.226), rgba(255, 255, 0, 0.226), rgba(0, 128, 0, 0.226), rgba(0, 0, 255, 0.226), rgba(128, 0, 128, 0.226));
+    }
+}
+/*Recomendación de los profesores de CoderHouse:
+0px a 767px - mobile phone
+768px a 1024px - tables (in general)
+1025px - desktop*/
+@media only screen and (min-width:768px) and (max-width:1024px){
+    body{
+        background-image: linear-gradient(to left, rgba(255, 0, 0, 0.226), rgba(255, 166, 0, 0.226), rgba(255, 255, 0, 0.226), rgba(0, 128, 0, 0.226), rgba(0, 0, 255, 0.226), rgba(128, 0, 128, 0.226));
+        /*background-image: url(../Multimedia/Fondo.JPG);*/
+        background-size: cover;
+        background-position: center;
+    }
+}
+/*Recomendación de los profesores de CoderHouse:
+0px a 767px - mobile phone
+768px a 1024px - tables (in general)
+1025px - desktop*/
+@media only screen and (min-width:0px) and (max-width:767px){
+    body{
+        background-color:rgba(82, 123, 236, 0.253);
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0.397),rgb(236, 222, 222),rgb(236, 222, 222), rgb(236, 222, 222), rgba(0, 0, 255, 0.356));
+    }
+}
+/*Recomendación de los profesores de CoderHouse:
+0px a 767px - mobile phone
+768px a 1024px - tables (in general)
+1025px - desktop*/
 @import "_others"
