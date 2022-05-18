@@ -11,7 +11,7 @@ Compiled SASS_1\AStyles_1.scss to SASS_1\AStyles_1.css.
 _________________________
 COMO HACER LO DE Git
 
-Esto es lo que se tiene que escribir en la "TERMINAL", en la sección de "bash" para que se haga la compilación de git.
+Esto es lo que se tiene que escribir en la "TERMINAL", en la sección de "bash" o "git" para que se haga la compilación de git.
 
 Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
 $ git status
@@ -24,7 +24,10 @@ warning: LF will be replaced by CRLF in SASS_1/AStyles_1.css.
 The file will have its original line endings in your working directory
 
 Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
-$ 
+$ git commit -m "versión1"
+
+Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
+$ git push
 
 */
 
