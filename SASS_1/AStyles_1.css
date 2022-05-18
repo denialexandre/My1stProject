@@ -1,36 +1,4 @@
 @charset "UTF-8";
-/* ¡ATENCIÓN!
-
-COMO COMPILAR EN SASS
-________________________
-Esto es lo que se tiene que escribir en la "TERMINAL", en la sección de "node" o "powershell" para que se haga la compilación de SASS a CSS.
-
-C:\Users\Deni Alexandre\OneDrive\Escritorio\My 1st project\My 1st project - Copy 1>SASS --watch SASS_1/AStyles_1.scss SASS_1/AStyles_1.css 
-Sass is watching for changes. Press Ctrl-C to stop.
-
-Compiled SASS_1\AStyles_1.scss to SASS_1\AStyles_1.css.
-_________________________
-COMO HACER LO DE Git
-
-Esto es lo que se tiene que escribir en la "TERMINAL", en la sección de "bash" o "git" para que se haga la compilación de git.
-
-Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
-$ git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
-$ git add .
-warning: LF will be replaced by CRLF in SASS_1/AStyles_1.css.
-The file will have its original line endings in your working directory
-
-Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
-$ git commit -m "versión1"
-
-Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
-$ git push
-
-*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*Estas son variables globales*/
 body {
