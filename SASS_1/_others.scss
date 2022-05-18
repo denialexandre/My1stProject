@@ -22,8 +22,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* ///////////..utility classes../////////// */
-
 .container {
     max-width: 1200px;
     width: 90%;
@@ -67,13 +65,13 @@ body {
     background: #fff;
     color: #000;
     opacity: 0.85;
-    height: 65px;
+    height: 100px;
     z-index: 12;
 }
 
 .navbar-container {
     display: flex;
-    height: 64px;
+    height: 65px;
     align-items: center;
     justify-content: left;
 }

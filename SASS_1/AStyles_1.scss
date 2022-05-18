@@ -1,3 +1,33 @@
+/* ¡ATENCIÓN!
+
+COMO COMPILAR EN SASS
+________________________
+Esto es lo que se tiene que escribir en la "TERMINAL", en la sección de "node" o "powershell" para que se haga la compilación de SASS a CSS.
+
+C:\Users\Deni Alexandre\OneDrive\Escritorio\My 1st project\My 1st project - Copy 1>SASS --watch SASS_1/AStyles_1.scss SASS_1/AStyles_1.css 
+Sass is watching for changes. Press Ctrl-C to stop.
+
+Compiled SASS_1\AStyles_1.scss to SASS_1\AStyles_1.css.
+_________________________
+COMO HACER LO DE Git
+
+Esto es lo que se tiene que escribir en la "TERMINAL", en la sección de "bash" para que se haga la compilación de git.
+
+Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
+$ git add .
+warning: LF will be replaced by CRLF in SASS_1/AStyles_1.css.
+The file will have its original line endings in your working directory
+
+Deni Alexandre@LAPTOP-SLR26NHU MINGW64 ~/OneDrive/Escritorio/My 1st project/My 1st project - Copy 1 (main)
+$ 
+
+*/
+
 $Color_1: linear-gradient(to right, rgba(255, 0, 0, 0.226), rgba(255, 166, 0, 0.226), rgba(255, 255, 0, 0.226), rgba(0, 128, 0, 0.226), rgba(0, 0, 255, 0.226), rgba(128, 0, 128, 0.226));
 $Textito: rgba(0, 0, 255, 0.836);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -78,17 +108,17 @@ ul{
     }
 }
 /*.box2{
-  background-color: rgb(224, 238, 238);
-  height: px;
-  width: 580px;
-  padding:15px;
-  border-width: 1px;
-  border-color:cadetblue;
-  border-style: outset;
-  float:left;
-  text-transform: capitalize;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color:orchid;
+    background-color: rgb(224, 238, 238);
+    height: px;
+    width: 580px;
+    padding:15px;
+    border-width: 1px;
+    border-color:cadetblue;
+    border-style: outset;
+    float:left;
+    text-transform: capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:orchid;
 }*/
 @media only screen and (min-width:1025px){
     body{
