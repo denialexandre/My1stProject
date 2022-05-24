@@ -42,21 +42,48 @@
     <h2>Web Development Projects</h2>
 <hr />
     <section>
+        <!--
         <dl>
-            <dt>Curso | JavaScript | Tarea 1 | Crear un algoritmo utilizando un ciclo</dt>
+            <dt>Curso | JavaScript | Tarea 1 | Crear un algoritmo utilizando un ciclo</dt>-->
             <!--"a" es de "anchor". y "href" es de "hyper reference"-->
-            <dd>Cierto restaurante quiere calcular sus ganancias diarias para ver si le conviene o no, adquirir "Terminales de pago con Tarjeta" y poder pagar la comisión que requiere el banco. Esto es un ejercicio de "market sizing" para el tema de finanzas.</dd>
+            <!--<dd>Cierto restaurante quiere calcular sus ganancias diarias para ver si le conviene o no, adquirir "Terminales de pago con Tarjeta" y poder pagar la comisión que requiere el banco. Esto es un ejercicio de "market sizing" para el tema de finanzas.</dd>
             <dd>Reglas:</dd>
             <dd>1. Número de clientes por mesa.</dd> 
             <dd>2. Precio del ticket por cliente.</dd>
             <dd>3. Promedio de gasto por cliente.</dd>
             <dd>4. Ticket más alto.</dd>
-            <script src="../JavaScript/index.js"></script>
         </dl>
 <br>
+    -->
         <dl>
             <dt><dt>Curso | JavaScript | Tarea 2 | Simulador interactivo</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minus labore quisquam sed, quos velit voluptate ad expedita ratione nisi mollitia fugiat voluptatibus ea harum molestiae vitae illo repellendus? Deserunt.</a></dd>
+<br>
+            <dd>Este es un simulador en el que el Usuario podrá registrar las actividades que tiene que hacer durante el día.</dd>
+            <dd>Reglas:</dd>
+            <dd>1. Agregar actividad en la sección correspondiente.</dd> 
+            <dd>2. Dar tap en "Enter" para registrar dicha actividad.</dd>
+            <dd>3. Agregar las siguientes actividades que el Usuario considere necesarias.</dd>
+            <dd>4. Cuando la actividad esté lista, el Usuario debe dar tap sobre dicha actividad para poder tacharla del listado.</dd>
+            <dd>5. Si el Usuario desea quitar la marca de su lista, deberá dar tap sobre dicha actividad en el listado.</dd>
+            <div class="list roundBorder">
+                <div class="date">
+                    <div class="dateRight">
+                        <div id="dateNumber"></div>
+                        <div>
+                            <div id="dateMonth"></div>
+                            <div id="dateYear"></div>
+                        </div>
+                    </div>
+                    <div id="dateText"></div>
+                </div>
+                <form onsubmit="addNewTask(event)" >
+                    <input type="text" name="taskText" autocomplete="off" placeholder="Agregar actividad" class="roundBorder">
+                    <!--<button type="submit" class="addTaskButton">+</button>
+                    <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>-->
+                </form>
+                <div id="tasksContainer"></div>
+            </div>
+            <script src="../JavaScript/Tarea2.js"></script>
         </dl>
 <br>
 <br>
