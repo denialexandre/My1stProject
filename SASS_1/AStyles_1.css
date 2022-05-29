@@ -124,88 +124,89 @@ ul li {
 0px a 767px - mobile phone
 768px a 1024px - tables (in general)
 1025px - desktop*/
+/*  Tarea 2 | Curso de JavaScript
 :root {
-  --primary: #1f36d2;
-  --secondary: #D33F49;
-  --light: rgb(127, 205, 122);
-  --dark: #000;
-  --diabled: #e7e7e7;
+    --primary: #1f36d2;
+    --secondary: #D33F49;
+    --light: rgba(214, 215, 228, 0.882);
+    --dark: #000;
+    --diabled: #e7e7e7;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  height: 100vh;
-  background-color: var(--diabled);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--diabled);
 }
 
 *:first-letter {
-  text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .roundBorder {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .list {
-  margin: 25px auto;
-  padding: 25px;
-  background-color: var(--light);
-  width: 100%;
-  max-width: 250px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 250px;
 }
 
 .date {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .dateRight {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #dateNumber {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 #dateText {
-  letter-spacing: 3px;
-  text-transform: uppercase;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 #dateMonth,
 #dateNumber,
-#dateText {
-  font-weight: bold;
+#dateText  {
+    font-weight: bold;
 }
 
 #dateMonth,
 #dateYear {
-  margin-left: 7px;
-  font-size: 20px;
+    margin-left: 7px;
+    font-size: 20px;
 }
 
 form {
-  margin: 20px 0;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: auto 35px auto;
-  grid-column-gap: 15px;
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
 }
 
 input {
-  border: none;
-  padding-left: 10px;
-  background-color: var(--diabled);
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
 }
 
 input:focus {
-  outline: none;
+    outline: none;
 }
 
-/*.addTaskButton,
+.addTaskButton,
 .orderButton {
     border: none;
     font-weight: bold;
@@ -222,21 +223,23 @@ input:focus {
 .orderButton {
     background-color: var(--secondary);
     color: var(--light);
-}*/
+}
+
 .task {
-  background-color: var(--primary);
-  padding: 15px;
-  margin-top: 15px;
-  color: var(--light);
-  cursor: pointer;
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
 }
 
 .done {
-  background-color: var(--diabled);
-  text-decoration: line-through;
-  color: var(--dark);
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
 }
-
+*/
+/*Tarea 3 | Curso de JavaScript*/
 * {
   margin: 0;
   padding: 0;

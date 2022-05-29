@@ -123,10 +123,12 @@ ul{
 768px a 1024px - tables (in general)
 1025px - desktop*/
 
+
+/*  Tarea 2 | Curso de JavaScript
 :root {
     --primary: #1f36d2;
     --secondary: #D33F49;
-    --light: rgb(127, 205, 122);
+    --light: rgba(214, 215, 228, 0.882);
     --dark: #000;
     --diabled: #e7e7e7;
 }
@@ -204,7 +206,7 @@ input:focus {
     outline: none;
 }
 
-/*.addTaskButton,
+.addTaskButton,
 .orderButton {
     border: none;
     font-weight: bold;
@@ -221,7 +223,7 @@ input:focus {
 .orderButton {
     background-color: var(--secondary);
     color: var(--light);
-}*/
+}
 
 .task {
     background-color: var(--primary);
@@ -236,5 +238,12 @@ input:focus {
     text-decoration: line-through;
     color: var(--dark);
 }
+*/
+
+/*Tarea 3 | Curso de JavaScript*/
+
+
+
+
 
 @import "_others"
