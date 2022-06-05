@@ -1,3 +1,4 @@
+//Definición de los "const".
 const fecha = document.querySelector('#fecha')
 const lista = document.querySelector('#lista')
 const elemento = document.querySelector('#elemento')
@@ -10,11 +11,11 @@ let LIST
 
 let id //Para que inicie en 0, cada actividad tendrá un ID diferente.
 
-//Fecha del día de hoy
+//Fecha del día de hoy.
 const FECHA = new Date ()
 fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'})
 
-//Funcionalidad de agregar actividad 
+//Funcionalidad de agregar actividad.
 function agregarTarea( tarea,id,realizado,eliminado) {
     if(eliminado) {return} // si existe eliminado es true, si no es false 
 
@@ -32,8 +33,7 @@ function agregarTarea( tarea,id,realizado,eliminado) {
     lista.insertAdjacentHTML("beforeend",elemento)
 }
 
-
-//Funcionalidad de actividad realizada 
+//Funcionalidad de actividad realizada. 
 function tareaRealizada(element) {
     element.classList.toggle(check)
     element.classList.toggle(uncheck)
@@ -44,6 +44,7 @@ function tareaRealizada(element) {
    // console.log(LIST[element.id].realizado)
 }
 
+//Funcionalidad de actividad eliminada del listado.
 function tareaEliminada(element){
    // console.log(element.parentNode)
    // console.log(element.parentNode.parentNode)
@@ -52,7 +53,8 @@ function tareaEliminada(element){
     console.log(LIST)
 }
 
-//Creación de evento para el enter y para habilitar el botón.
+//Creación de "evento" para el "enter" y para habilitar el botón "+". También se agrega el tema del "LocalStorage",
+//para que no se borre la información si se cierra el navegador o si se le da refresh a la pantalla.
 botonEnter.addEventListener('click', ()=> {
     const tarea = input.value
     if(tarea){
@@ -114,6 +116,7 @@ if(data){
     id = 0
 }
 
+//Funcionalidad para crear el listado de actividades.
 function cargarLista(array) {
     array.forEach(function(item){
         agregarTarea(item.nombre,item.id,item.realizado,item.eliminado)
