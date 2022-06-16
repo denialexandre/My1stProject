@@ -13,13 +13,13 @@ let id //Para que inicie en 0, cada actividad tendrá un ID diferente.
 
 //Fecha del día de hoy.
 const FECHA = new Date ()
-fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'})
+fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'long', day:'numeric'})
 
 //Funcionalidad de agregar actividad.
 function agregarTarea( tarea,id,realizado,eliminado) {
     if(eliminado) {return} // si existe eliminado es true, si no es false 
 
-    const REALIZADO = realizado ? check : uncheck // si realizado es verdadero check si no uncheck
+    const REALIZADO = realizado ? check : uncheck // si es realizado es verdadero, entonces lleva check, si no uncheck
 
     const LINE = realizado ? lineThrough : '' 
 
@@ -100,7 +100,7 @@ lista.addEventListener('click',function(event){
     }
     else if(elementData == 'eliminado') {
         tareaEliminada(element)
-        console.log("elimnado")
+        console.log("eliminado")
     }
     localStorage.setItem('TODO',JSON.stringify(LIST))
 })

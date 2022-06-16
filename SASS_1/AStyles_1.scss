@@ -572,4 +572,74 @@ body {
     color : var(--blue-light);
 } 
 
+//Segunda entrega del proyecto final
+
+.containeer{
+    height: 100vh;
+    width: 1500PX;
+    margin: 2rem auto;
+}
+
+.container h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+}
+
+.formulario-datos{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-datos input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #3c4642;
+    color: white;
+}
+
+.formulario-datos input:active{
+    border-bottom: 1px solid rgb(54, 101, 211);
+}
+
+.formulario-datos input:focus{
+    border-bottom: 1px solid dodgerblue;
+}
+
+.formulario-datos button {
+    background-color: rgb(41, 142, 209);
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    height: 3rem;
+}
+
+.Listado-Tareas{
+    display: flex;
+    flex-direction: column;
+}
+
+.Tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.icono{
+    color: tomato;
+    cursor: pointer;
+}
+
 @import "_others"
