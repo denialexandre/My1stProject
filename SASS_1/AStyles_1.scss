@@ -642,4 +642,20 @@ body {
     cursor: pointer;
 }
 
+// Actividades del equipo
+
+.success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background: rgb(11, 97, 11);
+}
+
+.error {
+    background: red;
+}
+
 @import "_others"

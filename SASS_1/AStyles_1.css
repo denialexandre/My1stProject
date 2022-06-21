@@ -615,6 +615,20 @@ body {
   cursor: pointer;
 }
 
+.success, .error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+  background: #0b610b;
+}
+
+.error {
+  background: red;
+}
+
 * {
   margin: 0;
   padding: 0;
