@@ -1,35 +1,59 @@
-// DOM Events
-document
-  .getElementById("product-form")
-  .addEventListener("submit", function (e) {
-    // Override the default Form behaviour
-    e.preventDefault();
+document.getElementById('formTask').addEventListener('submit', saveTask);
 
-    // Getting Form Values
-    const name = document.getElementById("name").value;
-    const price = document.getElementById("price").value;
-    const description = document.getElementById("description").value;
-    const year = document.getElementById("year").value;
+function saveTask(e) {
+  let title = document.getElementById('title').value;
+  let description = document.getElementById('description').value;
+  console.log(description)
 
-    // Create a new object list
-    const product = new Product(name, price, description, year);
+  let task = {
+    title,
+    description
+  };
 
-    // Create a new UI instance
-    const ui = new UI();
+  if(localStorage.getItem('tasks') === null) {
+    let tasks = [];
+    tasks.push(task);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  } else {
+    let tasks = JSON.parse(localStorage.getItem('tasks'));
+    tasks.push(task);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }
 
-    // Input User Validation
-    if (name === "" || price === "" || description === "" || year === "") {
-      ui.showMessage("Please, insert data in all fields!", "danger");
-    }
-
-    // Save Activity
-    ui.addProduct(product);
-    ui.showMessage("Activity added successfully!", "success");
-    ui.resetForm();
-  });
-
-document.getElementById("product-list").addEventListener("click", (e) => {
-  const ui = new UI();
-  ui.deleteProduct(e.target);
+  getTasks();
+  document.getElementById('formTask').reset();
   e.preventDefault();
-});
+}
+
+function deleteTask(title) {
+  console.log(title)
+  let tasks = JSON.parse(localStorage.getItem('tasks'));
+  for(let i = 0; i < tasks.length; i++) {
+    if(tasks[i].title == title) {
+      tasks.splice(i, 1);
+    }
+  }
+  
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+  getTasks();
+}
+
+function getTasks() {
+  let tasks = JSON.parse(localStorage.getItem('tasks'));
+  let tasksView = document.getElementById('tasks');
+  tasksView.innerHTML = '';
+  for(let i = 0; i < tasks.length; i++) {
+    let title = tasks[i].title;
+    let description = tasks[i].description;
+
+    tasksView.innerHTML += `<div class="card mb-3">
+        <div class="card-body">
+          <p>${title} - ${description}
+          <a href="#" onclick="deleteTask('${title}')" class="btn btn-danger ml-5">Done</a>
+          </p>
+        </div>
+      </div>`;
+  }
+}
+
+getTasks();
