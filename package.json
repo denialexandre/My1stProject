@@ -1,0 +1,22 @@
+{
+  "name": "my-1st-project---copy-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denialexandre/My1stProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denialexandre/My1stProject/issues"
+  },
+  "homepage": "https://github.com/denialexandre/My1stProject#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}

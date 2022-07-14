@@ -5,6 +5,10 @@ function saveTask(e) {
   let description = document.getElementById('description').value;
   console.log(description)
 
+//Fecha del día de hoy.
+  const FECHA = new Date ()
+  fecha.innerHTML = FECHA.toLocaleDateString('en-UK',{weekday: 'long', month: 'long', day:'numeric'})
+
   let task = {
     title,
     description

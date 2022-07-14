@@ -13,7 +13,7 @@ let id //Para que inicie en 0, cada actividad tendrá un ID diferente.
 
 //Fecha del día de hoy.
 const FECHA = new Date ()
-fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'long', day:'numeric'})
+fecha.innerHTML = FECHA.toLocaleDateString('en-UK',{weekday: 'long', month: 'long', day:'numeric'})
 
 //Funcionalidad de agregar actividad.
 function agregarTarea( tarea,id,realizado,eliminado) {
