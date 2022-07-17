@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Deni Alexandre">
+    <meta name="keywords" content="Deni, Alexandre, Social Media, Contact, Certified Product Owner, Head of Digital Product, Fluent English">     
+    <meta name="author" content="Deni Alexandre">
+    <title>Contacts Agenda | Premium</title>
+    <link rel = "stylesheet" href = "../CSS/StylesContactsAgendaPremium.css">
+    <link rel="stylesheet" href="../SASS_1/AStyles_1.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">--> 
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+<nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="../index.html">Back to home page</a></li>
+        </ul>
+            <h1 class="logo">Deni Alexandre</h1>
+    </div>
+    </nav>
+    </head>
+<br>
+<br>
+<br>
+<br>
+<body>
+    <!-- form modal -->
+    <div id = "fullscreen-div"></div>
+    <form class = "modal" id = "modal">
+        <div class = "modal-content">
+            <div class = "modal-head">
+                <h3 id = "modal-title">Add contact</h3>
+                <button type="button" id = "close-btn">
+                    <i class = "fas fa-times"></i>
+                </button>
+            </div>
+            <div class = "modal-main">
+                
+                <div class = "modal-row grid-row">
+                    <div class = "modal-col">
+                        <label for="">Origin</label>
+                        <input type = "text" placeholder="E.g. ITAM" class = "form-control" name = "addr_ing_name">
+                    </div>
+                    <div class = "modal-col">
+                        <label for = "">Label</label>
+                        <select name = "labels">
+                            <option value = "Family">Family</option>
+                            <option value = "Friends">Friend</option>
+                            <option value = "Colleagues">Work colleague</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class = "modal-row grid-row">
+                    <div class = "modal-col">
+                        <label for="">First name</label>
+                        <input type = "text" placeholder="First name" class = "form-control" name = "first_name">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">Last name</label>
+                        <input type = "text" placeholder="Last name" class = "form-control" name = "last_name">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">Email</label>
+                        <input type = "email" placeholder="xyz@mail.com" class = "form-control" name = "email">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">Mobile</label>
+                        <input type = "text" placeholder="55 1234 5678" class = "form-control" name = "phone">
+                    </div>
+                </div>
+
+                <div class = "modal-row grid-row">
+                    <div class = "modal-col">
+                        <label for="">Address</label>
+                        <input type = "text" placeholder="Street & number" class = "form-control" name = "street_addr">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">Zip code</label>
+                        <input type = "text" placeholder="E. g. 01780" class = "form-control" name = "postal_code">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">City</label>
+                        <input type = "text" placeholder="City name" class = "form-control" name = "city">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">Country</label>
+                        <select id = "country-list" name = "country">
+                            <!-- <option>USA</option> -->
+                        </select>
+                    </div>
+                </div>
+
+                <div class = "modal-row" id = "modal-btns">
+                    <button type = "submit" id = "save-btn">SAVE</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- end of form modal -->
+
+    <!-- address book home -->
+    <div class = "addr-book" id = "addr-book">
+        <div class = "addr-book-content">
+            <div class = "addr-book-head">
+                <h2>List of <span>contacts</span></h2>
+            </div>
+
+            <div class = "addr-book-top">
+                <button type = "button" class = "btn" id = "add-btn">
+                    <span><i class = "fas fa-plus"></i>  Add contact</span>
+                </button>
+            </div>
+
+            <div class = "addr-book-list" id = "addr-book-list">
+                <table class = "addr-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Label</th>
+                            <th>Name</th>
+                            <th>Mobile phone</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>
+                                <span class = "addressing-name">Smith Family</span><br><span class = "address">Johnson Street - 5668, Lake side</span>
+                            </td>
+                            <td><span>Colleagues</span></td>
+                            <td>Mark Smith</td>
+                            <td>123-456-7890</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- end of address book home -->
+    <script src = "../JavaScript/Tarea10_ContactsAgendaPremium.js"></script>
+<br>
+    <section>
+        <nav>
+            <ul>
+                <li class="list"><a class="list" href="../index.html">Back to home page</a></li>
+            </ul>
+        </nav>
+    </section>
+    <br>
+    <hr/>
+    <br>
+    <section>
+    <footer class="footer">&copy; Designed and developed by Deni Alexandre, March 2022.</footer>
+    <br>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+</html>
