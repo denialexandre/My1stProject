@@ -5,7 +5,7 @@ const Navbar = () => {
     return(
         <nav>
             <div>
-                Deni Alexandre's Store
+                Deni Alexandre's eShop
             </div>
             <CartWidget />
             <div>

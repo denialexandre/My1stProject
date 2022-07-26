@@ -1,18 +1,25 @@
 import './App.css';
+import { useState } from 'react';
 import Navbar from './Components/Navbar/Navbar';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
+import Counter from './Components/Counter/Counter';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 
 function App() {
+  const [show, setShow] = useState(true)
+
+  const handleOnAdd = (quantity) => {
+    console.log('Quantity of added items', quantity)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
-        <ItemListContainer greeting="Welcome to my shop!" />
+        {/*show ? <Counter show={show} /> : null*/}
+        <Counter show={show} stock={7} initial={1} onAdd={handleOnAdd}/>
+        <ItemListContainer show={show} setShow={setShow} greeting="Welcome to my eShop!" />
         <p>
-          ¡Holi!
-        </p>
-        <p>
-          ¡Hola, mundoooooo!
+          ¡Hey, planet!
         </p>
       </header>
     </div>
